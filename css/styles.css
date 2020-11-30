@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'Fondamento';
+    src: url(fonts/Fondamento/Fondamento-Regular.ttf);
+}
+@font-face {
+    font-family: 'Nova Slim';
+    src: url(fonts/Nova_Slim/NovaSlim-Regular.ttf);
+}
+@font-face {
+    font-family: 'Quando';
+    src: url(fonts/Quando/Quando-Regular.ttf);
+}
+@font-face {
+    font-family: 'Racing Sans One';
+    src: url(fonts/Racing_Sans_One/RacingSansOne-Regular.ttf);
+}
+@font-face {
+    font-family: 'Rakkas';
+    src: url(fonts/Rakkas/Rakkas-Regular.ttf);
+}
+@font-face {
+    font-family: 'Sail';
+    src: url(fonts/Sail/Sail-Regular.ttf);
+}
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+/* Global Styles
+------------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quando';
+    font-size: 20px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a {
+    color: #FFE66D
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Fondamento';
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+}
+h2 {
+    font-family: 'Fondamento';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+}
+h3 {
+    font-family: 'Shrikhand';
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.25;
+    margin: 0;
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+
+.item-details h3 ~ p {
+    margin: 0;
+}
+.divider > section{
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+/* Profile
+------------------------------------------------------------------*/
+header {
+    background: #2F3061;
+    color: #F7FFF7;
+}
+.header_name_image_flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-h2 {
+    margin-top: 10px;;
+}
+.header_contactme_flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.header_contactme_flexbox img {
+    width: 50px;
+    margin: 0 10px;
+}
+/* Qualifications
+------------------------------------------------------------------*/
+.qualifications {
+    background-image: url(../images/gradient_blue_background.png);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 10px;
+}
+
+.qualifications-title-flexbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.qualifications-title-flexbox img {
+    width: 40px;
+    margin: 0 10px;
+}
+.qualifications p {
+    width: 60%;
+}
+/* Skills
+------------------------------------------------------------------*/
+.skills {
+    background-color: #32CD32;
+}
+.skills-title-flexbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.skills-title-flexbox img {
+    width: 40px;
+    margin: 0 10px;
+}
+.skills p {
+    width: 60%;
+}
+/* Work Experience
+------------------------------------------------------------------*/
+.work-experience {
+    background: #A1C6D7;
+}
+.work-title-flexbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.work-title-flexbox img {
+    width: 40px;
+    margin: 0 10px;
+}
+.job-item {
+    display: flex;
+    flex-direction: column;
+}
+.job-details {
+    display: flex;
+    flex-direction: column;
+}
+.job-details h3 {
+    font-family: 'Racing Sans One';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0;
+}
+.job-details-heading {
+    display: flex;
+    align-items: center;
+}
+.job-details-heading .exception  {
+    width: 130px;
+    margin-right: 10px;
+}
+
+.job-details-heading .exception1  {
+    width: 130px;
+    height: 80px;
+    margin-right: 10px;
+}
+.job-details-heading img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.job-details-heading h4 {
+    font-family: 'Rakkas';
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+}
+
+
+
+/* Education
+------------------------------------------------------------------*/
+.education {
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 10px;
+}
+.education p {
+    width: 60%;
+}
+.education-title-flexbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.education-title-flexbox img {
+    width: 40px;
+    margin: 0 10px;
+}
+.education-details {
+    display: flex;
+    flex-direction: column;
+}
+.education-details h3 {
+    font-family: 'Racing Sans One';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0;
+}
+.education-details h4 {
+    font-family: 'Rakkas';
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+}
+.education-institution {
+    display: flex;
+    align-items: center;
+}
+.education-institution .exception  {
+    width: 130px;
+    margin-right: 10px;
+}
+
+.education-institution img {
+    width: 40px;
+    margin-right: 10px;
+}
+.education-institution .exception1  {
+    width: 130px;
+    height: 130px;
+    margin-right: 10px;
+}
+/* Publications
+------------------------------------------------------------------*/
+.publications-title-flexbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.publications-title-flexbox img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+/* Certifications
+------------------------------------------------------------------*/
+.certifications-title-flexbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.certifications-title-flexbox img {
+    width: 40px;
+    margin: 0 10px;
+}
+.certifications-topic-flexbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.certifications-topic-flexbox img {
+    width: 80px;
+    margin: 0 30px;
+}
+.certifications_flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px 10px;
+    flex-wrap: wrap;
+    
+}
+.certifications_flexbox img {
+    padding: 10px;
+    width: 400px;
+}
+
+
+/* Projects
+------------------------------------------------------------------*/
+.projects {
+    background: #F7FFF7;
+}
+.projects a {
+    color: #2F3061;
+}
+.projects .btn {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgba(47, 48, 97, 80%);
+}
+.project-item {
+    overflow: hidden;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+
+
+/* Work Experience
+------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Info
+------------------------------------------------------------------*/
+footer {
+    background: #343434;
+    color: #F7FFF7;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block
+}
+
+/* Responsive
+------------------------------------------------------------------*/
+@media screen and (min-width: 750px) {
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .contact-list a {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    h2 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    } 
+    .contact-list a {
+        padding: 5px;
+    }
+    .skills {
+        background-size: cover;
+        background-position: top right;
+    }
+}
